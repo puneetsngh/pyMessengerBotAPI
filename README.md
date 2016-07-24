@@ -73,7 +73,31 @@ def process_message(data):
   sender = data['entry'][0]['messaging'][0]['sender']['id']
   bot.send_attachment(sender,"image",url="http://xyx.png")
   
-  bot.send_attachment(sender,"image",url="http://xyx.png")
+  bot.send_attachment(sender,"video",url="http://xyx.mp4")
   
-  
+  bot.send_attachment(sender,"audio",url="http://xyx.mp3")
 ```
+
+###Get User Info
+####get_user(self,sender)
+
+```
+def process_message(data):
+  sender = data['entry'][0]['messaging'][0]['sender']['id']
+  user = bot.get_user(sender)
+```
+
+##Thread Settings to improve user experience
+
+You should visit [Thread Setting Page](https://developers.facebook.com/docs/messenger-platform/thread-settings)
+
+you can enable this greetings, persistent menu, get started message using `curls` 
+
+Note : Messenger Platoform is in beta, visiblity of different thread settings will took time.
+
+###This is the first wrapper for messenger bot api. I tried to keep it really simple from understanding point of view. If you feel that you have something to contribute and imporve this wrapper, you are welcome to send pull requests. 
+
+###I will mention every person's name who will contribute for it's developement.
+
+####I hope you all will accept this initial start from me and start creating bots in python for messenger too.
+
