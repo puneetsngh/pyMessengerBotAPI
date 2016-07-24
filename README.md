@@ -14,6 +14,8 @@ A template main.py is provided in messenger folder. You should use that as your 
 
 ###Simple Echo Bot
 
+<img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xfp1/t39.2365-6/13466933_1565510967084335_135574073_n.png" alt="screenshot" width="250" height="450"> 
+
 ```
 def process_message(data):
   sender = data['entry'][0]['messaging'][0]['sender']['id']
@@ -24,6 +26,9 @@ def process_message(data):
 ###Using Buttons
 ####send_button_message(sender, text,buttons,metadata=None,quick_reply=None)
 #####create_buttons(type,title,payload=None,url=None)
+
+<img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xtp1/t39.2365-6/13509162_1732711383655205_1306472501_n.png" alt="screenshot" width="250" height="450"> 
+
 ```
 def process_message(data):              
   sender = data['entry'][0]['messaging'][0]['sender']['id']
@@ -38,6 +43,9 @@ def process_message(data):
 ###Using Generic Messages
 ####send_generic(sender, elements,metadata=None,quick_reply=None):
 #####create_element(title,item_url=None,image=None,subtitle=None,buttons=[])
+
+<img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xft1/t39.2365-6/13509251_1026555627430343_1803381600_n.png" alt="screenshot" width="250" height="450"> 
+
 ```
 def process_message(data):              
   sender = data['entry'][0]['messaging'][0]['sender']['id']
@@ -54,6 +62,9 @@ def process_message(data):
   bot.send_generic_message(sender,[element1,element2])
 ```
 
+<img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xfa1/t39.2365-6/13509243_818831098218750_489238139_n.png" alt="screenshot" width="500" height="450"> 
+
+
 ###Sending Quick Replies
 #####create_quick_reply(title,payload)
 you can attach them with text,photo,audio,videos
@@ -67,6 +78,8 @@ def process_message(data):
 
 ###Send Photos, Videos, Audios
 ####send_attachment(self, sender, type, url,metadata=None,quick_reply=None)
+
+<img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xaf1/t39.2365-6/13466577_1753800631570799_2129488873_n.png" alt="screenshot" width="250" height="450"> 
 
 ```
 def process_message(data):
@@ -86,6 +99,19 @@ def process_message(data):
   sender = data['entry'][0]['messaging'][0]['sender']['id']
   user = bot.get_user(sender)
 ```
+Output :
+
+```
+{
+  "first_name": "Peter",
+  "last_name": "Chang",
+  "profile_pic": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p200x200/13055603_10105219398495383_8237637584159975445_n.jpg?oh=1d241d4b6d4dac50eaf9bb73288ea192&oe=57AF5C03&__gda__=1470213755_ab17c8c8e3a0a447fed3f272fa2179ce",
+  "locale": "en_US",
+  "timezone": -7,
+  "gender": "male"
+} 
+```
+
 
 ##Thread Settings to improve user experience
 
