@@ -3,24 +3,13 @@ import requests
 import json
 import traceback
 import sys
-import cgi
-import time
-from datetime import *
-from time import *
-import os
-import re
-import urllib
-import urllib2
-import httplib
 
 import logging
 from sys import version_info
 import string
-from uuid import uuid4
-import unittest 
 reload(sys)
 sys.setdefaultencoding('utf8')
-import random
+
 
 import messenger
 
@@ -132,7 +121,7 @@ def process_video(data):
         
 def process_audio(data):
     sender = data['entry'][0]['messaging'][0]['sender']['id'] 
-    quick_reply1 = bot.create_quick_reply("emoji","no")
+    quick_reply1 = bot.create_quick_reply("send yes","yes")
     bot.send_message(sender,"You sent an audio",quick_reply=[quick_reply1])
 
 def process_file(data):
