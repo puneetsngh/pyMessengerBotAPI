@@ -10,7 +10,7 @@ A Simple Python Wrapper for Messenger Bot API
 ##Writing your first bot
 ###Before proceeding further please go through the [documentation on developers page](https://developers.facebook.com/docs/messenger-platform/quickstart)
 
-A template main.py is provided in messenger folder. You should use that as your bot page.
+A template main.py is provided. You should use that as your bot page.
 
 ###Simple Echo Bot
 
@@ -128,3 +128,4 @@ Note : Messenger Platoform is in beta, visiblity of different thread settings wi
 
 ####I hope you all will accept this initial start from me and start creating bots in python for messenger too.
 
+You can contact me for any issues [pyMessengerBotApi Group on Telegram](https://telegram.me/joinchat/ABhpXz9gCoCl8ZKzBMqSLQ) or on [Messenger](https://m.me/puneet12)
