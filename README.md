@@ -129,3 +129,18 @@ Note : Messenger Platoform is in beta, visiblity of different thread settings wi
 ####I hope you all will accept this initial start from me and start creating bots in python for messenger too.
 
 You can contact me for any issues [pyMessengerBotApi Group on Telegram](https://telegram.me/joinchat/ABhpXz9gCoCl8ZKzBMqSLQ) or on [Messenger](https://m.me/puneet12)
+
+###To Do's
+
+1. Message Handlers (Done, will update if other contribute for its development)
+2. Threading (Done, will update if other contribute for its development)
+3. Async Version
+
+
+##Bots created using this API Wrapper
+
+<a href="https://www.youtube.com/watch?v=Pka3bWtQfCA
+" target="_blank"><img src="https://img.youtube.com/vi/Pka3bWtQfCA/maxresdefault.jpg" 
+alt="Sift Bot for Skype" width="420" height="315" border="10" /></a>
+
+
